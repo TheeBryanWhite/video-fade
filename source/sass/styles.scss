@@ -1,0 +1,123 @@
+@import "reset";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text:400,600,700');
+
+$black: #000;
+$white: #fff;
+
+body {
+	font-family: 'Markazi Text', serif;
+	font-size: 32px;
+
+	&.active {
+		.page-elements {
+			@include vertical-center;
+			opacity: 1;
+		}
+	}
+
+	&.clicked {
+		.page-elements {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+	}
+}
+
+h1 {
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 70px;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-size: 56px;
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+}
+
+.background-fade,
+.fullpage-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.background-fade {
+	background-color: $black;
+	z-index: 1;
+	opacity: 1;
+	transition: opacity .5s linear;
+
+	&.fade-out {
+		opacity: 0;
+	}
+}
+
+.background-image {
+	background: url('../img/high-on-fire.jpg') no-repeat center top;
+	background-size: cover;
+	opacity: .4;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.elements {
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 100vh;
+}
+
+.page-elements {
+	color: $white;
+	opacity: 0;
+	position: relative;
+	transform: translateY(-100%);
+	transition: all 1s ease(in-out-quart);
+	width: 50%;
+	z-index: 2;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .5s linear;
+
+  &.front {
+  	z-index: 10;
+  }
+}
+
+iframe {
+  /* optional */
+  width: 100%;
+  height: 100%; 
+}
+
+.cta {
+	border: 2px solid $white;
+	color: $white;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 5px 30px;
+	transition: all .2s linear;
+
+	&:hover {
+		background-color: $white;
+		color: $black;
+	}
+}

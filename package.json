@@ -1,0 +1,50 @@
+{
+ "name": "VideoFade",
+ "version": "1.0.0",
+ "description": "Just effing around",
+ "main": "index.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "author": "",
+ "license": "ISC",
+ "config": {
+  "apiKey": "c58e8efac336d2d39dc83a6dfc808aa2",
+  "dist": "./dist",
+  "hostname": "videofade.local/dist",
+  "images": "./source/img",
+  "scripts": "./source/scripts",
+  "scss": "./source/sass",
+  "src": "./source"
+ },
+ "repository": {
+  "type": "git",
+  "url": ""
+ },
+ "keywords": [
+  "WordPress",
+  "gulp"
+ ],
+ "devDependencies": {
+  "autoprefixer": "^8.6.5",
+  "browser-sync": "^2.24.5",
+  "css-mqpacker": "^6.0.2",
+  "eslint": "^5.1.0",
+  "eslint-config-standard": "^11.0.0",
+  "eslint-plugin-import": "^2.13.0",
+  "eslint-plugin-node": "^6.0.1",
+  "eslint-plugin-promise": "^3.8.0",
+  "eslint-plugin-standard": "^3.1.0",
+  "gulp-concat": "^2.6.1",
+  "gulp-eslint": "^5.0.0",
+  "gulp-imagemin": "^4.1.0",
+  "gulp-postcss": "^7.0.1",
+  "gulp-sass": "^4.0.1",
+  "gulp-sourcemaps": "^2.6.4",
+  "gulp-uglify": "^3.0.0",
+  "postcss-pxtorem": "^4.0.1",
+  "postcss-unique-selectors": "^4.0.0",
+  "superagent": "^3.8.3",
+  "superagent-no-cache": "^0.1.1"
+ }
+}

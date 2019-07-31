@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Markazi+Text:400,600,700");
+html {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  overflow: visible; }
+
+button,html input[type='button'],input[type='reset'],input[type='submit'] {
+  cursor: pointer; }
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+button,input,optgroup,select,textarea {
+  margin: 0; }
+
+body {
+  font-family: 'Markazi Text', serif;
+  font-size: 2rem; }
+  body.active .page-elements {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 1; }
+  body.clicked .page-elements {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.375rem;
+  margin-bottom: 1.5625rem; }
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 600; }
+
+a {
+  text-decoration: none; }
+
+.background-fade,.fullpage-container {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.background-fade {
+  background-color: #000;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: opacity .5s linear;
+  transition: opacity .5s linear; }
+  .background-fade.fade-out {
+    opacity: 0; }
+
+.background-image {
+  background: url("../img/high-on-fire.jpg") no-repeat center top;
+  background-size: cover;
+  opacity: .4;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.elements {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100vh; }
+
+.page-elements {
+  color: #fff;
+  opacity: 0;
+  position: relative;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+  width: 50%;
+  z-index: 2; }
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity .5s linear;
+  transition: opacity .5s linear; }
+  .video-container.front {
+    z-index: 10; }
+
+iframe {
+  /* optional */
+  width: 100%;
+  height: 100%; }
+
+.cta {
+  border: 2px solid #fff;
+  color: #fff;
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.3125rem 1.875rem;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear; }
+  .cta:hover {
+    background-color: #fff;
+    color: #000; }
