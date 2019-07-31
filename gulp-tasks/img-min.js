@@ -1,6 +1,6 @@
-var pkg = require('../package.json');
-var gulp = require('gulp');
-var imagemin = require('gulp-imagemin');
+const pkg = require('../package.json');
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
 
 const imgmin = function() {
 	gulp.task('default', () =>

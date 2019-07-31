@@ -1,5 +1,5 @@
-var pkg = require('../package.json');
-var browserSync = require('browser-sync').create();
+const pkg = require('../package.json');
+const browserSync = require('browser-sync').create();
 
 const initialize = function(){
     browserSync.init({

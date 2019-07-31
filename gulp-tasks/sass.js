@@ -1,11 +1,11 @@
-var pkg = require('../package.json');
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var pxtorem = require('postcss-pxtorem');
-var mqpacker = require('css-mqpacker');
-var uniqueSelectors = require('postcss-unique-selectors');
+const pkg = require('../package.json');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const pxtorem = require('postcss-pxtorem');
+const mqpacker = require('css-mqpacker');
+const uniqueSelectors = require('postcss-unique-selectors');
 
 const streamToBrowserSync = require('./browsersync').stream;
 

@@ -1,8 +1,8 @@
-var pkg = require('../package.json');
-var gulp = require('gulp');
-var eslint = require('gulp-eslint');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+const pkg = require('../package.json');
+const gulp = require('gulp');
+const eslint = require('gulp-eslint');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 const build = function() {
     return gulp.src(`${pkg.config.scripts}/*.js`)

@@ -1,6 +1,9 @@
 var animateController = (function($) {
 
-	var body, bgFade, vContainer, cta;
+	var body = null, 
+		bgFade = null,
+		vContainer = null,
+		cta = null;
 	
 	function init() {
 		body = $('body');
